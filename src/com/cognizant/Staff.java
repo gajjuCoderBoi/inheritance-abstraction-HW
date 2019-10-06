@@ -10,9 +10,9 @@ public abstract class Staff extends Person {
 
     private UUID id;
     private Date joinDate;
-
     private Date leaveDate;
     private List<String> languages;
+    private int salary;
 
     public Staff(String firstName, String lastName, Date DOB, char gender) {
         super(firstName, lastName, DOB, gender);
@@ -54,5 +54,12 @@ public abstract class Staff extends Person {
 
     public void setLeaveDate(Date leaveDate) {
         this.leaveDate = leaveDate;
+    }
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
     }
 }
